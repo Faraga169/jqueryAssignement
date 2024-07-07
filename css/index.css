@@ -1,0 +1,321 @@
+:root{
+    --bs-border-radius: 0;
+}
+
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+
+    .navigate{
+        position:fixed;
+        bottom:20px;
+        right:20px;
+        height:40px;
+        width:40px;
+        z-index:999;
+    }
+
+
+   
+    .layer{
+        position:fixed;
+    top:0px;
+    right:0px;
+    left:0px;
+    left:0px;
+    background-color: #777;
+    height:100vh;
+    z-index: 9999999;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    }
+
+
+a{
+    text-decoration: none;
+}
+
+/* Home */
+
+#home{
+    position:relative;
+    height:90vh;
+    width:100%;
+    background-image: url('../images/images/events-heavenly-header.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.coverlayer{
+    background-color: rgba(214, 46, 51, 0.6);
+    position:absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+}
+
+.contentlayer{
+    position: relative;
+    height:70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.contentlayer h2{
+    font-size: 60px;
+}
+
+.opennav{
+    position:absolute;
+    /* left:11%; */
+    font-size: 30px;
+   /* display: inline-block; */
+   cursor: pointer;
+   /* width: 70%; */
+   left: 15.375rem;
+   bottom:30%;
+   /* display: inline-block; */
+   
+}
+
+.sidebar{
+  
+    /* background-color: aqua; */
+    position: fixed;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.sidebar .navbar{
+    height:100%;
+    background-color: black;
+    position:relative;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.closebtn{
+    position: absolute;
+    /* z-index: 99999; */
+    color:white;
+    top:-10px;
+    right:-20px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.closebtn:hover{
+    color:rgba(214, 46, 51, 0.4);
+}
+
+
+
+.sidebar .navbar a{
+    padding-top: 30px;
+    padding-right: 50px;
+    font-size:25px;
+    color:white;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.sidebar .navbar a:hover{
+    color:rgba(214, 46, 51, 0.4);
+}
+
+
+
+/* singers */
+
+#singers{
+    /* background-color: aqua; */
+    width:80%;
+    margin:100px auto;
+    display:flex;
+    justify-content: center;
+    text-align:center
+
+}
+
+.singerboxes{
+    /* background-color: blue; */
+
+    width:50%;
+    /* margin: 50px; */
+   
+}
+
+.singerbox h2{
+    background-color: rgba(219, 74, 103, 0.6);
+    color:white;
+    padding:10px;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+
+.innersingerbox{
+    background-color: #ccc;
+    padding:10px;
+    display:none;
+   
+
+}
+
+
+
+
+/* Duration */
+
+#duration{
+    background-image: url(../images/images/invitation-2508607__340.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* height:330px; */
+    position:relative;
+}
+
+.duration-layer{
+position: absolute;
+top:0px;
+left:0px;
+height:100%;
+width:100%;
+background-color:  rgba(214, 46, 51, 0.6);
+}
+
+.box-content{
+    border:2px solid white;
+    padding:50px;
+    color:white;
+     
+}
+
+.container{
+    padding:100px 0px;
+}
+
+.box-content span{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+
+
+
+/* contact */
+#contact .head{
+    color:rgb(68, 68, 68);
+    font-weight: 700;
+    font-size: 35px;
+}
+#contact p{
+    color:#777;
+}
+.contact-info p{
+    text-indent: 25px;
+    color:#777;
+}
+
+.contact-info h2{
+    color:rgb(68, 68, 68);
+    font-weight: 900;
+    font-size: 18px;
+}
+.contact-details{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color:#777;
+    height:150px;
+    text-align: center;
+}
+
+.contact-details i{
+    color: #777777
+}
+
+#email{
+    color:rgb(214, 46, 51);
+}
+
+.icon1{
+    width:40px;
+    height:40px;
+    border:1px solid #777777;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin:30px 5px ;
+   cursor: pointer;
+   transition: all 1s;
+}
+
+.icon1:hover{
+    background-color:  rgb(214, 46, 51);
+}
+
+
+.icon1 i{
+    color: #777777;
+    transition: all 1s;
+}
+
+.icon1:hover i{
+    color:white;
+}
+
+form input,form textarea{
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+
+.form-control{
+border-radius: var(--bs-border-radius);
+}
+
+#number{
+    color:rgb(214, 46, 51);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+button{
+    background-color: rgb(214, 46, 51);
+    border: 2px solid rgb(214, 46, 51);
+    padding: 10px 10px;
+    color:white;
+}
